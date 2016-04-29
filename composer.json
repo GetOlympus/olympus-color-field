@@ -1,7 +1,7 @@
 {
   "name": "getolympus/olympus-color-field",
   "type": "olympus-field",
-  "description": "Olympus Hera",
+  "description": "[READ-ONLY] Color field, this component is a part of the Olympus Hera WordPress library.",
   "keywords": ["olympus", "hera", "field", "color", "framework", "php"],
   "homepage": "https://github.com/GetOlympus/olympus-color-field",
   "license": "MIT",
