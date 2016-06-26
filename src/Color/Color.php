@@ -20,22 +20,20 @@ use GetOlympus\Hera\Translate\Controller\Translate;
 class Color extends Field
 {
     /**
-     * @var string
+     * Prepare variables.
      */
-    protected $faIcon = 'fa-tint';
-
-    /**
-     * @var string
-     */
-    protected $template = 'color.html.twig';
+    protected function setVars()
+    {
+        $this->getModel()->setFaIcon('fa-tint');
+        $this->getModel()->setScript('js'.S.'color.js');
+        $this->getModel()->setTemplate('color.html.twig');
+    }
 
     /**
      * Prepare HTML component.
      *
      * @param array $content
      * @param array $details
-     *
-     * @since 0.0.1
      */
     protected function getVars($content, $details = [])
     {
@@ -45,20 +43,15 @@ class Color extends Field
             'title' => Translate::t('color.title', [], 'colorfield'),
             'default' => '',
             'description' => '',
-
-            // details
-            'post' => 0,
-            'prefix' => '',
-            'template' => 'pages',
         ];
 
         // Build defaults data
         $vars = array_merge($defaults, $content);
 
         // Retrieve field value
-        $vars['val'] = $this->getValue($details, $vars['default'], $content['id'], true);
+        $vars['val'] = $this->getValue($content['id'], $details, $vars['default']);
 
         // Update vars
-        $this->getField()->setVars($vars);
+        $this->getModel()->setVars($vars);
     }
 }
