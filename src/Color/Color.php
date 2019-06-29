@@ -20,38 +20,64 @@ use GetOlympus\Zeus\Translate\Controller\Translate;
 class Color extends Field
 {
     /**
-     * Prepare variables.
+     * @var array
      */
-    protected function setVars()
+    protected $adminscripts = ['wp-color-picker'];
+
+    /**
+     * @var array
+     */
+    protected $adminstyles = ['wp-color-picker'];
+
+    /**
+     * @var string
+     */
+    protected $template = 'color.html.twig';
+
+    /**
+     * @var string
+     */
+    protected $textdomain = 'colorfield';
+
+    /**
+     * Prepare defaults.
+     *
+     * @return array
+     */
+    protected function getDefaults()
     {
-        $this->getModel()->setFaIcon('fa-tint');
-        $this->getModel()->setScript('js'.S.'color.js');
-        $this->getModel()->setTemplate('color.html.twig');
+        return [
+            'title' => Translate::t('color.title', $this->textdomain),
+            'default' => '',
+            'description' => '',
+
+            /**
+             * color picker settings
+             * @see $.widget.wp.wpColorPicker
+             */
+            'settings' => [
+                'defaultColor' => false,
+                'hide'         => true,
+                'palettes'     => true,
+                'width'        => 255,
+                'mode'         => 'hsv',
+                'type'         => 'full',
+                'slider'       => 'horizontal',
+            ],
+        ];
     }
 
     /**
-     * Prepare HTML component.
+     * Prepare variables.
      *
-     * @param array $content
-     * @param array $details
+     * @param  object  $value
+     * @param  array   $contents
+     *
+     * @return array
      */
-    protected function getVars($content, $details = [])
+    protected function getVars($value, $contents)
     {
-        // Build defaults
-        $defaults = [
-            'id' => '',
-            'title' => Translate::t('color.title', [], 'colorfield'),
-            'default' => '',
-            'description' => '',
-        ];
-
-        // Build defaults data
-        $vars = array_merge($defaults, $content);
-
-        // Retrieve field value
-        $vars['val'] = $this->getValue($content['id'], $details, $vars['default']);
-
         // Update vars
-        $this->getModel()->setVars($vars);
+        return $contents;
     }
 }
