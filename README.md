@@ -42,8 +42,7 @@ return \GetOlympus\Field\Color::build('my_color_field_id', [
 
 ## Retrive data
 
-Retrieve your value from Database with a simple `$value = get_option('my_color_field_id')`.  
-Note you can use the `stripslashes($value)` php function to remove backslashes:
+Retrieve your value from Database with a simple `$value = get_option('my_color_field_id')`.
 
 ```html
 #f40000
