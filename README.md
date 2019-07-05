@@ -55,7 +55,8 @@ Retrieve your value from Database with a simple `$value = get_option('my_color_f
 
 ## Authors and Copyright
 
-Achraf Chouk [![@crewstyle][twitter-image]][twitter-url]
+Achraf Chouk  
+[![@crewstyle][twitter-image]][twitter-url]
 
 Please, read [LICENSE][license-blob] for more information.  
 [![MIT][license-image]][license-url]
