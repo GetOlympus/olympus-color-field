@@ -25,8 +25,8 @@ return \GetOlympus\Field\Color::build('my_color_field_id', [
     'description' => 'Zero and Light are not available colors!',
 
     /**
-     * color picker settings
-     * @see $.widget.wp.wpColorPicker
+     * Color picker settings
+     * @see https://core.trac.wordpress.org/browser/trunk/src/js/_enqueues/lib/color-picker.js
      */
     'settings' => [
         'defaultColor' => false,
@@ -40,18 +40,31 @@ return \GetOlympus\Field\Color::build('my_color_field_id', [
 ]);
 ```
 
+## Variables definitions
+
+| Variable      | Type    | Default value if not set | Accepted values |
+| ------------- | ------- | ------------------------ | --------------- |
+| `title`       | String  | `'Color'` | *empty* |
+| `default`     | String  | *empty* | Hex color code |
+| `description` | String  | *empty* | *empty* |
+| `settings`    | Array   | see [Field initialization](#field-initialization) | see [WordPress reference](https://core.trac.wordpress.org/browser/trunk/src/js/_enqueues/lib/color-picker.js) |
+
 ## Retrive data
 
-Retrieve your value from Database with a simple `$value = get_option('my_color_field_id')`.
+Retrieve your value from Database with a simple `get_option('my_color_field_id', '')` (see [WordPress reference][getoption-url]).
 
-```html
-#f40000
+```php
+// Get color from Database
+$color = get_option('my_color_field_id', '#f40000');
+
+// Display Coca-Cola baseline in color
+echo 'Always <b style="color:'.$color.'">Coca-Cola</b>';
 ```
 
 ## Release History
 
 * 0.0.8
-    * ADD: add new version compatible with Zeus-Core latest version
+- [x] ADD: new version compatible with Zeus-Core latest version
 
 ## Authors and Copyright
 
@@ -82,6 +95,7 @@ Please, read [LICENSE][license-blob] for more information.
 [zeus-url]: https://github.com/GetOlympus/Zeus-Core
 [codefactor-image]: https://www.codefactor.io/repository/github/GetOlympus/olympus-color-field/badge?style=flat-square
 [codefactor-url]: https://www.codefactor.io/repository/github/getolympus/olympus-color-field
+[getoption-url]: https://developer.wordpress.org/reference/functions/get_option/
 [license-blob]: https://github.com/GetOlympus/olympus-color-field/blob/master/LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT

@@ -52,8 +52,8 @@ class Color extends Field
             'description' => '',
 
             /**
-             * color picker settings
-             * @see $.widget.wp.wpColorPicker
+             * Color picker settings
+             * @see https://core.trac.wordpress.org/browser/trunk/src/js/_enqueues/lib/color-picker.js
              */
             'settings' => [
                 'defaultColor' => false,
