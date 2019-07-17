@@ -15,7 +15,7 @@
 Using `composer` in your PHP project:
 
 ```sh
-composer install getolympus/olympus-color-field
+composer require getolympus/olympus-color-field
 ```
 
 ## Field initialization
