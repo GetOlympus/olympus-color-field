@@ -1,4 +1,6 @@
-<img src="https://useiconic.com/open-iconic/svg/brush.svg" height="70">
+<p align="center">
+    <img src="https://img.icons8.com/nolan/2x/paint-palette.png">
+</p>
 
 # Color Field
 > This component is a part of the [**Olympus Zeus Core**][zeus-url] **WordPress** framework.  
