@@ -24,8 +24,8 @@ Use the following lines to add a `color field` in your **WordPress** admin pages
 
 ```php
 return \GetOlympus\Field\Color::build('my_color_field_id', [
-    'title' => 'What is your favorite Coke?',
-    'default' => '#f40000',
+    'title'       => 'What is your favorite Coke?',
+    'default'     => '#f40000',
     'description' => 'Zero and Light are not available colors!',
 
     /**
