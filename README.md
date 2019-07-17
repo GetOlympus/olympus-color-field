@@ -1,3 +1,5 @@
+<img src="https://useiconic.com/open-iconic/svg/brush.svg" height="70">
+
 # Color Field
 > This component is a part of the [**Olympus Zeus Core**][zeus-url] **WordPress** framework.  
 > It uses the default WordPress color field.
@@ -63,6 +65,12 @@ echo 'Always <b style="color:'.$color.'">Coca-Cola</b>';
 
 ## Release History
 
+* 0.0.10
+- [x] FIX: remove twig dependency from composer
+
+* 0.0.9
+- [x] FIX: remove zeus-core dependency from composer
+
 * 0.0.8
 - [x] ADD: new version compatible with Zeus-Core latest version
 
@@ -75,7 +83,7 @@ Please, read [LICENSE][license-blob] for more information.
 [![MIT][license-image]][license-url]
 
 [https://github.com/crewstyle](https://github.com/crewstyle)  
-[http://fr.linkedin.com/in/achrafchouk](http://fr.linkedin.com/in/achrafchouk)
+[https://fr.linkedin.com/in/achrafchouk](https://fr.linkedin.com/in/achrafchouk)
 
 ## Contributing
 
