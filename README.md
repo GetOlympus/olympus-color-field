@@ -67,6 +67,9 @@ echo 'Always <b style="color:'.$color.'">Coca-Cola</b>';
 
 ## Release History
 
+* 0.0.11
+- [x] FIX: json encoder in twig source file
+
 * 0.0.10
 - [x] FIX: remove twig dependency from composer
 
