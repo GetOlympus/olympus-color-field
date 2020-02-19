@@ -2,13 +2,13 @@
 
 namespace GetOlympus\Field;
 
-use GetOlympus\Zeus\Field\Controller\Field;
-use GetOlympus\Zeus\Translate\Controller\Translate;
+use GetOlympus\Zeus\Field\Field;
+use GetOlympus\Zeus\Utils\Translate;
 
 /**
  * Builds Color field.
  *
- * @package Field
+ * @package DionysosField
  * @subpackage Color
  * @author Achraf Chouk <achrafchouk@gmail.com>
  * @since 0.0.1
@@ -42,7 +42,7 @@ class Color extends Field
      *
      * @return array
      */
-    protected function getDefaults()
+    protected function getDefaults() : array
     {
         return [
             'title' => Translate::t('color.title', $this->textdomain),
@@ -73,7 +73,7 @@ class Color extends Field
      *
      * @return array
      */
-    protected function getVars($value, $contents)
+    protected function getVars($value, $contents) : array
     {
         // Update vars
         return $contents;
