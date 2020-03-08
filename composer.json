@@ -1,9 +1,9 @@
 {
-  "name": "getolympus/olympus-color-field",
+  "name": "getolympus/olympus-dionysos-field-color",
   "type": "olympus-field",
-  "description": "Color field, this component is a part of the Olympus Zeus Core framework.",
-  "keywords": ["olympus-zeus", "color", "field", "custom", "framework", "php", "wordpress"],
-  "homepage": "https://github.com/GetOlympus/olympus-color-field",
+  "description": "Color field, this component is a part of the Olympus Dionysos fields.",
+  "keywords": ["olympus", "dionysos", "color", "field", "custom", "framework", "php", "wordpress"],
+  "homepage": "https://github.com/GetOlympus/olympus-dionysos-field-color",
   "license": "MIT",
   "authors": [
     {
@@ -13,7 +13,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "GetOlympus\\Field\\": "src/Color/"
+      "GetOlympus\\Dionysos\\Field\\": "src/Color/"
     }
   },
   "extra": {

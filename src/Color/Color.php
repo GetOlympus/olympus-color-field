@@ -1,9 +1,8 @@
 <?php
 
-namespace GetOlympus\Field;
+namespace GetOlympus\Dionysos\Field;
 
 use GetOlympus\Zeus\Field\Field;
-use GetOlympus\Zeus\Utils\Translate;
 
 /**
  * Builds Color field.
@@ -45,7 +44,7 @@ class Color extends Field
     protected function getDefaults() : array
     {
         return [
-            'title' => Translate::t('color.title', $this->textdomain),
+            'title' => parent::t('color.title', $this->textdomain),
             'default' => '',
             'description' => '',
 
