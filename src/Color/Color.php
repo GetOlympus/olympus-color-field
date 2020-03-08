@@ -7,10 +7,10 @@ use GetOlympus\Zeus\Field\Field;
 /**
  * Builds Color field.
  *
- * @package DionysosField
+ * @package    DionysosField
  * @subpackage Color
- * @author Achraf Chouk <achrafchouk@gmail.com>
- * @since 0.0.1
+ * @author     Achraf Chouk <achrafchouk@gmail.com>
+ * @since      0.0.1
  *
  */
 
