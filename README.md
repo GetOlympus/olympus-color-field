@@ -1,29 +1,25 @@
-<p align="center">
-    <img src="https://img.icons8.com/nolan/2x/paint-palette.png">
-</p>
-
-# Color Field
-> This component is a part of the [**Olympus Zeus Core**][zeus-url] **WordPress** framework.  
+# Dionysos Color Field
+> This component is a part of the **Olympus Dionysos fields** for **WordPress**.  
 > It uses the default WordPress color field.
 
 [![Olympus Component][olympus-image]][olympus-url]
 [![CodeFactor Grade][codefactor-image]][codefactor-url]
 [![Packagist Version][packagist-image]][packagist-url]
 
-## Installation
-
-Using `composer` in your PHP project:
-
 ```sh
-composer require getolympus/olympus-color-field
+composer require getolympus/olympus-dionysos-field-color
 ```
+
+<p align="center">
+    <img src="https://github.com/GetOlympus/olympus-dionysos-field-color/blob/master/assets/field-color-64.png" />
+</p>
 
 ## Field initialization
 
 Use the following lines to add a `color field` in your **WordPress** admin pages or custom post type meta fields:
 
 ```php
-return \GetOlympus\Field\Color::build('my_color_field_id', [
+return \GetOlympus\Dionysos\Field\Color::build('my_color_field_id', [
     'title'       => 'What is your favorite Coke?',
     'default'     => '#f40000',
     'description' => 'Zero and Light are not available colors!',
@@ -67,17 +63,15 @@ echo 'Always <b style="color:'.$color.'">Coca-Cola</b>';
 
 ## Release History
 
-* 0.0.11
-- [x] FIX: json encoder in twig source file
+0.0.12
+- New Olympus components compatibility
+- Change repository to be a part of Dionysos fields
 
-* 0.0.10
-- [x] FIX: remove twig dependency from composer
+0.0.11
+- FIX: json encoder in twig source file
 
-* 0.0.9
-- [x] FIX: remove zeus-core dependency from composer
-
-* 0.0.8
-- [x] ADD: new version compatible with Zeus-Core latest version
+0.0.10
+- FIX: remove twig dependency from composer
 
 ## Authors and Copyright
 
@@ -105,7 +99,6 @@ Please, read [LICENSE][license-blob] for more information.
 <!-- links & imgs dfn's -->
 [olympus-image]: https://img.shields.io/badge/for-Olympus-44cc11.svg?style=flat-square
 [olympus-url]: https://github.com/GetOlympus
-[zeus-url]: https://github.com/GetOlympus/Zeus-Core
 [codefactor-image]: https://www.codefactor.io/repository/github/GetOlympus/olympus-color-field/badge?style=flat-square
 [codefactor-url]: https://www.codefactor.io/repository/github/getolympus/olympus-color-field
 [getoption-url]: https://developer.wordpress.org/reference/functions/get_option/
@@ -115,4 +108,4 @@ Please, read [LICENSE][license-blob] for more information.
 [packagist-image]: https://img.shields.io/packagist/v/getolympus/olympus-color-field.svg?style=flat-square
 [packagist-url]: https://packagist.org/packages/getolympus/olympus-color-field
 [twitter-image]: https://img.shields.io/badge/crewstyle-blue.svg?style=social&logo=twitter
-[twitter-url]: http://twitter.com/crewstyle
+[twitter-url]: https://twitter.com/crewstyle
