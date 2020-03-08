@@ -86,7 +86,7 @@ Please, read [LICENSE][license-blob] for more information.
 
 ## Contributing
 
-1. Fork it (<https://github.com/GetOlympus/olympus-color-field/fork>)
+1. Fork it (<https://github.com/GetOlympus/olympus-dionysos-field-color/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
@@ -99,13 +99,13 @@ Please, read [LICENSE][license-blob] for more information.
 <!-- links & imgs dfn's -->
 [olympus-image]: https://img.shields.io/badge/for-Olympus-44cc11.svg?style=flat-square
 [olympus-url]: https://github.com/GetOlympus
-[codefactor-image]: https://www.codefactor.io/repository/github/GetOlympus/olympus-color-field/badge?style=flat-square
-[codefactor-url]: https://www.codefactor.io/repository/github/getolympus/olympus-color-field
+[codefactor-image]: https://www.codefactor.io/repository/github/GetOlympus/olympus-dionysos-field-color/badge?style=flat-square
+[codefactor-url]: https://www.codefactor.io/repository/github/getolympus/olympus-dionysos-field-color
 [getoption-url]: https://developer.wordpress.org/reference/functions/get_option/
-[license-blob]: https://github.com/GetOlympus/olympus-color-field/blob/master/LICENSE
+[license-blob]: https://github.com/GetOlympus/olympus-dionysos-field-color/blob/master/LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT
-[packagist-image]: https://img.shields.io/packagist/v/getolympus/olympus-color-field.svg?style=flat-square
-[packagist-url]: https://packagist.org/packages/getolympus/olympus-color-field
+[packagist-image]: https://img.shields.io/packagist/v/getolympus/olympus-dionysos-field-color.svg?style=flat-square
+[packagist-url]: https://packagist.org/packages/getolympus/olympus-dionysos-field-color
 [twitter-image]: https://img.shields.io/badge/crewstyle-blue.svg?style=social&logo=twitter
 [twitter-url]: https://twitter.com/crewstyle
