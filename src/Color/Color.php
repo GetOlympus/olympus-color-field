@@ -63,18 +63,4 @@ class Color extends Field
             ],
         ];
     }
-
-    /**
-     * Prepare variables.
-     *
-     * @param  object  $value
-     * @param  array   $contents
-     *
-     * @return array
-     */
-    protected function getVars($value, $contents) : array
-    {
-        // Update vars
-        return $contents;
-    }
 }

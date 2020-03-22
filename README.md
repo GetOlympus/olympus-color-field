@@ -2,17 +2,24 @@
 > This component is a part of the **Olympus Dionysos fields** for **WordPress**.  
 > It uses the default WordPress color field.
 
-[![Olympus Component][olympus-image]][olympus-url]
-[![CodeFactor Grade][codefactor-image]][codefactor-url]
-[![Packagist Version][packagist-image]][packagist-url]
-
 ```sh
 composer require getolympus/olympus-dionysos-field-color
 ```
 
+---
+
+[![Olympus Component][olympus-image]][olympus-url]
+[![CodeFactor Grade][codefactor-image]][codefactor-url]
+[![Packagist Version][packagist-image]][packagist-url]
+[![MIT][license-image]][license-blob]
+
+---
+
 <p align="center">
     <img src="https://github.com/GetOlympus/olympus-dionysos-field-color/blob/master/assets/field-color-64.png" />
 </p>
+
+---
 
 ## Field initialization
 
@@ -63,26 +70,15 @@ echo 'Always <b style="color:'.$color.'">Coca-Cola</b>';
 
 ## Release History
 
+0.0.13
+- Use default `getVars` Zeus-Core method. No need to override it anymore
+
 0.0.12
 - New Olympus components compatibility
 - Change repository to be a part of Dionysos fields
 
 0.0.11
 - FIX: json encoder in twig source file
-
-0.0.10
-- FIX: remove twig dependency from composer
-
-## Authors and Copyright
-
-Achraf Chouk  
-[![@crewstyle][twitter-image]][twitter-url]
-
-Please, read [LICENSE][license-blob] for more information.  
-[![MIT][license-image]][license-url]
-
-<https://github.com/crewstyle>  
-<https://fr.linkedin.com/in/achrafchouk>
 
 ## Contributing
 
@@ -104,8 +100,5 @@ Please, read [LICENSE][license-blob] for more information.
 [getoption-url]: https://developer.wordpress.org/reference/functions/get_option/
 [license-blob]: https://github.com/GetOlympus/olympus-dionysos-field-color/blob/master/LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat-square
-[license-url]: http://opensource.org/licenses/MIT
 [packagist-image]: https://img.shields.io/packagist/v/getolympus/olympus-dionysos-field-color.svg?style=flat-square
 [packagist-url]: https://packagist.org/packages/getolympus/olympus-dionysos-field-color
-[twitter-image]: https://img.shields.io/badge/crewstyle-blue.svg?style=social&logo=twitter
-[twitter-url]: https://twitter.com/crewstyle
